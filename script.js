@@ -38,7 +38,7 @@ const updateSlider = () => {
 
   function updateCarousel() {
     const slideWidth = slides[0].clientWidth;
-    const newTransformValue = -currentIndex * slideWidth + "px";
+    const newTransformValue = -currentIndex * slideWidth - 24 + "px";
     slidesContainer.style.transform = `translateX(${newTransformValue})`;
     slideButtons.forEach((btn, index) => {
       btn.classList.toggle("active", index === currentIndex);
