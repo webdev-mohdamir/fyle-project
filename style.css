@@ -430,4 +430,8 @@ input[id="privacy"]:checked +label::after{
   .project-details p{
     font-size: 14px;
   }
+
+  label[for="privacy"]{
+    font-size: 10px;
+  }
 }
