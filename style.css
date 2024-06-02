@@ -116,6 +116,8 @@ button{
   transition: all 0.5s ease-in-out;
 }
 .slide{
+  max-width: 370px;
+  max-height: 526px;
   overflow: hidden;
 }
 
@@ -124,8 +126,6 @@ button{
 }
 
 .sliide-img{
-  max-width: 370px;
-  max-height: 526px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -395,5 +395,9 @@ input[id="privacy"]:checked +label::after{
 @media screen and (max-width: 768px) {
   h1{
     font-size: 44px;
+  }
+
+  .slide{
+    max-width: 260px;
   }
 }
